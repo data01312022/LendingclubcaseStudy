@@ -62,8 +62,8 @@ Understand the column:
 - Our target column is loan_status for label as charged-off which indicated default against a loan
 
 # Outlier treatment:
-Let's create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
-% of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
+Create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
+Percentages of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
 
 # Data Visualization (Univariate/Bivariate/Multivariate Analysis)
 
