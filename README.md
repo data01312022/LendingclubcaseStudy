@@ -125,9 +125,9 @@ Multivariate Analysis:
 6. In case of very high interest rate, medium DTI is yielding alomst same deafult rate as very high DTI.
 
 ## Acknowledgements
-- This project was inspired by upgrad  
+- This project was inspired by loan applicant's and loan bank
 - Reference if any
-- This project was based on Loan applicant's and load criteria to approve or reject the load ( Risk Analytics)
+- This project was based on Loan applicant's and load criteria to approve or reject the load ( Risk Analytics for applicant's)
 
 ## Contact
 Created by @data01312022 and  @eohitc - feel free to contact me!
