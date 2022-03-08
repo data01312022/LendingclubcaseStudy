@@ -1,5 +1,4 @@
-# Project Name
-Landing club - Risk Analytics 
+# Project Name : Landing club - Risk Analytics 
 
 Consumer finance company ( Banking and financial ) which specializes in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. 
 Two types of risks are associated with the bank’s decision:
