@@ -10,10 +10,10 @@ Identify the loan Accepted  and load Rejected applications & criteria
 
 ## Table of Contents
 
-#Introduction
+# Introduction
 Solving this assignment will give you an idea about how real business problems are solved using EDA. In this case study, apart from applying the techniques you have learnt in EDA, you will also develop a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
 
-#Business Understanding
+# Business Understanding
 You work for a consumer finance company which specialises in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
 
 If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
@@ -24,7 +24,7 @@ The data given below contains the information about past loan applicants and whe
 
 In this case study, you will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
 
-#Business Objectives
+# Business Objectives
 This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface.
 
 Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. In this case, the customers labelled as 'charged-off' are the 'defaulters'.
@@ -42,8 +42,8 @@ Conclusion: This part is about conclusion drawn from the study.
 # Reading and Understanding the Data
 - Import all require libraries
 - Import the loan data from 2007 to 2011 and data dictionary 
-
-# Data cleaning & preperation
+**
+Data cleaning & preperation:**
 
 - Check the number of null values in the columns
 	It is observed that many columns have all the null values, these columns may be deleted
@@ -57,13 +57,14 @@ Understand the column:
 - Also columns related to behavioral attributes can be dropped as we are analysing the comparison between columns which can impact default of loan before sanction of loan as these data columns will not be availble to us before sanction. Also funding will be done after sanction thus columns related to funding is being dropped
 - Our target column is loan_status for label as charged-off which indicated default against a loan
 
-# Outlier treatment:
+** Outlier treatment:
+**
 Let's create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
 % of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
 
-#Data Visualization (Univariate/Bivariate/Multivariate Analysis)
-
-# Univariate Analysis:
+**Data Visualization (Univariate/Bivariate/Multivariate Analysis)
+**
+Univariate Analysis:
 
 Identifying variables- Categorical variable:
 - Ordered Categorical variables: grade, sub grade, issue_d, issue_year, Income_bin, Dti_bin etc.
@@ -75,17 +76,20 @@ Identifying variables- Categorical variable:
 - Loans with 60 month term has been started from 2010
 - After starting sanctioning loan with 60 months term from 2010 it is seen that no. of defaults in 60 month term loan are on a increasing trend comapred to 36 month term loan.
 
-# Bivariate Analysis:
+**Bivariate Analysis:
+**
 - Funded amount and funded amount by investor has a stromg correcaltion with each other and with loan amount, therfore theses two columns can be dropped
 - As only 5 loans has been sanctioned in NE therefore high default in NE cannot be genearlized and can be ignored. The next state with maximum default rate is in NV which is having 416 no. of loan sanctioned
 
-# Derived Metrices:
+** Derived Metrices:
+**
 - Check variable for income bin with low, Medium, High, Very high income and % loan
 {'Low loan_amnt': '500.0 to   5000.0', 'Medium loan_amnt': '  5000.0 to  8875.0', 'High loan_amnt': '8875.0 to  13600.0', 'Very high loan_amnt': '13600.0 to 29000.0'}
 - As installment is highly correlated with loan amount, it is assumed that simailar variation as above shall be there.
 
 
-# Multivariate Analysis:
+**Multivariate Analysis:
+**
 - Lets check variation between dti and interest rate and loan status
 - As can be seen there is a decreasing trend of loan default in 36 month term loans, however 60 month term loans deafult rate is on increasing trend ever since its inception in 2010.
 - In case of very high interest rate, medium DTI is yielding alomst same deafult rate as very high DTI.
