@@ -1,4 +1,4 @@
-# Project Name : Landing club - Risk Analytics 
+# Lending club - Risk Analytics 
 
 Consumer finance company ( Banking and financial ) which specializes in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. 
 Two types of risks are associated with the bank’s decision:
@@ -8,7 +8,12 @@ Two type of decision will take for any loan application as “Loan Accepted “ 
 Identify the loan Accepted  and load Rejected applications & criteria
 
 ## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Conclusions](#conclusions)
+* [Acknowledgements](#acknowledgements)
 
+# General Information
 # Introduction
 Solving this assignment will give you an idea about how real business problems are solved using EDA. In this case study, apart from applying the techniques you have learnt in EDA, you will also develop a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
 
@@ -57,8 +62,8 @@ Understand the column:
 - Our target column is loan_status for label as charged-off which indicated default against a loan
 
 # Outlier treatment:
-Let's create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
-% of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
+Create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
+Percentages of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
 
 # Data Visualization (Univariate/Bivariate/Multivariate Analysis)
 
