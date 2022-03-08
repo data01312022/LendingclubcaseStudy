@@ -42,8 +42,8 @@ Conclusion: This part is about conclusion drawn from the study.
 # Reading and Understanding the Data
 - Import all require libraries
 - Import the loan data from 2007 to 2011 and data dictionary 
-**
-Data cleaning & preperation:**
+
+# Data cleaning & preperation:
 
 - Check the number of null values in the columns
 	It is observed that many columns have all the null values, these columns may be deleted
@@ -57,13 +57,12 @@ Understand the column:
 - Also columns related to behavioral attributes can be dropped as we are analysing the comparison between columns which can impact default of loan before sanction of loan as these data columns will not be availble to us before sanction. Also funding will be done after sanction thus columns related to funding is being dropped
 - Our target column is loan_status for label as charged-off which indicated default against a loan
 
-** Outlier treatment:
-**
+# Outlier treatment:
 Let's create dataframe containing predictors and the corresponding outlier percetange and check the % of data left after all the outlier removal
 % of row data lost during cleaning and removal of outliers is 15.23% which is not much considering no. of rows of the tune of 37k. Therfore, theses changes can be implemented on original updated dataframe
 
-**Data Visualization (Univariate/Bivariate/Multivariate Analysis)
-**
+# Data Visualization (Univariate/Bivariate/Multivariate Analysis)
+
 Univariate Analysis:
 
 Identifying variables- Categorical variable:
@@ -76,20 +75,20 @@ Identifying variables- Categorical variable:
 - Loans with 60 month term has been started from 2010
 - After starting sanctioning loan with 60 months term from 2010 it is seen that no. of defaults in 60 month term loan are on a increasing trend comapred to 36 month term loan.
 
-**Bivariate Analysis:
-**
+Bivariate Analysis:
+
 - Funded amount and funded amount by investor has a stromg correcaltion with each other and with loan amount, therfore theses two columns can be dropped
 - As only 5 loans has been sanctioned in NE therefore high default in NE cannot be genearlized and can be ignored. The next state with maximum default rate is in NV which is having 416 no. of loan sanctioned
 
-** Derived Metrices:
-**
+Derived Metrices:
+
 - Check variable for income bin with low, Medium, High, Very high income and % loan
 {'Low loan_amnt': '500.0 to   5000.0', 'Medium loan_amnt': '  5000.0 to  8875.0', 'High loan_amnt': '8875.0 to  13600.0', 'Very high loan_amnt': '13600.0 to 29000.0'}
 - As installment is highly correlated with loan amount, it is assumed that simailar variation as above shall be there.
 
 
-**Multivariate Analysis:
-**
+Multivariate Analysis:
+
 - Lets check variation between dti and interest rate and loan status
 - As can be seen there is a decreasing trend of loan default in 36 month term loans, however 60 month term loans deafult rate is on increasing trend ever since its inception in 2010.
 - In case of very high interest rate, medium DTI is yielding alomst same deafult rate as very high DTI.
@@ -118,7 +117,7 @@ Identifying variables- Categorical variable:
 - Python 3.0 and above,EDA,Excel data dictionary,.csv data files,
 - Pandas,numpy, metplotlib, seaborn libraries
 
-**##Conclusions**
+# Conclusions
 1. No. of loans being offered are in an increasing trend from 2007 to 2011 and so does the loan default rate.
 2. Default rate is much higher for 60 months term comapred to 36 month term ever since its inception in 2010. Infact default rate is on decreasing trend for 36 months term may be due to increasing 60 month term loan. Therfore no. of 60 months term loan may be reduced.
 3. It is observed that there is higher tendency of loan default when loan is being offered for purpose of small business, therfore no. of loans to small business may be reduced or offered after due diligence.
@@ -132,4 +131,4 @@ Identifying variables- Categorical variable:
 - This project was based on Loan applicant's and load criteria to approve or reject the load ( Risk Analytics)
 
 ## Contact
-Created by data01312022@githubusername and  rohitc@githubusername - feel free to contact me!
+Created by @data01312022 and  @eohitc - feel free to contact me!
