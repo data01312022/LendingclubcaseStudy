@@ -1,0 +1,5 @@
+Owner of Use case: Rohit Chaudhary and Giridhar Tarare
+GitHub repository link : https://github.com/data01312022/LendingclubcaseStudy
+Python code: https://github.com/data01312022/LendingclubcaseStudy/blob/main/Giridhar_Tarare.ipynb
+Read me files: https://github.com/data01312022/LendingclubcaseStudy/blob/main/README.md
+PPT Documents:https://github.com/data01312022/LendingclubcaseStudy/blob/main/Case_Study-Lending%20club%E2%80%93Risk%20Analytics.pdf
